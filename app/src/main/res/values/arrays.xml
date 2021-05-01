@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- used In Preference the tags used in queries the database -->
+    <array name="tags_defaults">
+        <item>love</item>
+        <item>life</item>
+    </array>
+    <array name="lang_defaults">
+        <item>en</item>
+    </array>
+
+    <!-- used In Preference the Language used in queries the database -->
+    <array name="lang_names">
+        <item>English</item>
+        <item>Arabic</item>
+    </array>
+    <array name="lang_values">
+        <item>en</item>
+        <item>ar</item>
+    </array>
+
+    <!-- used In Preference the Font used in row quote -->
+    <array name="fonts_labels">
+        <item>Default</item>
+        <item>Akaya Telivigala</item>
+        <item>Amatic SC</item>
+        <item>Amiri</item>
+        <item>Aref Ruqaa</item>
+        <item>Caveat</item>
+        <item>Dancing Script</item>
+        <item>Reem Kufi</item>
+        <item>Satisfy</item>
+        <item>Stick</item>
+    </array>
+
+    <array name="fonts_value">
+        <item>roboto_regular.ttf</item>
+        <item>akaya_telivigala_regular.ttf</item>
+        <item>amatic_sc_regular.ttf</item>
+        <item>amiri_regular.ttf</item>
+        <item>aref_ruqaa_regular.ttf</item>
+        <item>caveat_regular.ttf</item>
+        <item>dancing_script_regular.ttf</item>
+        <item>reem_kufi_regular.ttf</item>
+        <item>satisfy_regular.ttf</item>
+        <item>stick_regular.ttf</item>
+    </array>
+
+    <!-- used In Preference the Notification Every -->
+    <array name="notify_every_labels">
+        <item>Hourly</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+    </array>
+    <string-array name="notify_every_values">
+        <item>3600000</item>
+        <item>86400000</item>
+        <item>604800000</item>
+    </string-array>
+
+    <!-- used In Preference the Widget Every -->
+<!--    <array name="widget_every_labels">-->
+<!--        <item>On Screen Lock</item>-->
+<!--        <item>Hourly</item>-->
+<!--        <item>Daily</item>-->
+<!--        <item>Weekly</item>-->
+<!--    </array>-->
+<!--    <array name="widget_every_values">-->
+<!--        <item>On Screen Lock</item>-->
+<!--        <item>Hourly</item>-->
+<!--        <item>Daily</item>-->
+<!--        <item>Weekly</item>-->
+<!--    </array>-->
+</resources>

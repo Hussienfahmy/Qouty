@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:key="category_quotes"
+        android:title="Quotes">
+
+        <EditTextPreference
+            android:key="@string/key_number_quotes"
+            android:title="Number Of Quotes"
+            app:useSimpleSummaryProvider="true"
+            android:defaultValue="@string/number_quotes_default"/>
+
+        <MultiSelectListPreference
+            android:key="@string/key_tags"
+            android:title="Tags"
+            android:defaultValue="@array/tags_defaults"/>
+
+        <MultiSelectListPreference
+            android:entries="@array/lang_names"
+            android:entryValues="@array/lang_values"
+            android:defaultValue="@array/lang_defaults"
+            android:key="@string/key_lang"
+            android:title="Quotes Language" />
+
+        <ListPreference
+            android:entries="@array/fonts_labels"
+            android:entryValues="@array/fonts_value"
+            android:defaultValue="@string/font_default"
+            android:key="@string/key_font"
+            app:useSimpleSummaryProvider="true"
+            android:title="Font"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="category_notification"
+        android:title="Notification">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/key_notification"
+            android:title="Enable Notification" />
+
+        <ListPreference
+            android:entries="@array/notify_every_labels"
+            android:entryValues="@array/notify_every_values"
+            android:key="@string/key_notify_every"
+            app:useSimpleSummaryProvider="true"
+            android:defaultValue="@string/default_notify_every"
+            android:title="Notify Every" />
+    </PreferenceCategory>
+
+    <Preference
+        android:key="@string/key_pref_about"
+        android:title="About"/>
+
+    <Preference
+        app:key="@string/key_pref_credits"
+        android:title="Credits"/>
+
+<!--    <PreferenceCategory-->
+<!--        android:key="category_widget"-->
+<!--        android:title="Widget">-->
+<!--        <ListPreference-->
+<!--            android:entries="@array/widget_every_labels"-->
+<!--            android:entryValues="@array/widget_every_values"-->
+<!--            android:key="@string/key_change_widget_every"-->
+<!--            app:useSimpleSummaryProvider="true"-->
+<!--            android:title="Change Quote in Widget Every" />-->
+<!--    </PreferenceCategory>-->
+</PreferenceScreen>

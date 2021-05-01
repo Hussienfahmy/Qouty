@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    android:label="@string/app_name"
+    app:startDestination="@id/quotes">
+
+    <fragment
+        android:id="@+id/quotes"
+        android:name="com.hussien.qouty.fragments.QuotesFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_qoutes"/>
+    <include app:graph="@navigation/aboutlibs_navigation" />
+    <fragment
+        android:id="@+id/menu_setting"
+        android:name="com.hussien.qouty.fragments.SettingsFragment"
+        android:label="Setting" />
+    <fragment
+        android:id="@+id/menu_favorites"
+        android:name="com.hussien.qouty.fragments.FavoritesFragment"
+        android:label="Favorites"
+        tools:layout="@layout/fragment_favorites" />
+    <action
+        android:id="@+id/action_global_menu_favorites"
+        app:destination="@id/menu_favorites" />
+    <action
+        android:id="@+id/action_global_menu_setting"
+        app:destination="@id/menu_setting" />
+    <action
+        android:id="@+id/action_global_about_libraries"
+        app:destination="@id/about_libraries" />
+</navigation>

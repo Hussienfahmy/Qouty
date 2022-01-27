@@ -29,7 +29,7 @@ public final class QuotesBroadCastReceiver_MembersInjector implements MembersInj
     injectActionsUtils(instance, actionsUtilsProvider.get());
   }
 
-  @InjectedFieldSignature("com.hussien.quoty.sync.QuotesBroadCastReceiver.actionsUtils")
+  @InjectedFieldSignature("com.hussien.qouty.sync.QuotesBroadCastReceiver.actionsUtils")
   public static void injectActionsUtils(QuotesBroadCastReceiver instance,
       ActionsUtils actionsUtils) {
     instance.actionsUtils = actionsUtils;

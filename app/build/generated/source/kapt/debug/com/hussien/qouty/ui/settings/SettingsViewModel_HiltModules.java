@@ -29,7 +29,7 @@ public final class SettingsViewModel_HiltModules {
 
     @Binds
     @IntoMap
-    @StringKey("com.hussien.quoty.ui.settings.SettingsViewModel")
+    @StringKey("com.hussien.qouty.ui.settings.SettingsViewModel")
     @HiltViewModelMap
     public abstract ViewModel binds(SettingsViewModel vm);
   }
@@ -44,7 +44,7 @@ public final class SettingsViewModel_HiltModules {
     @IntoSet
     @HiltViewModelMap.KeySet
     public static String provide() {
-      return "com.hussien.quoty.ui.settings.SettingsViewModel";
+      return "com.hussien.qouty.ui.settings.SettingsViewModel";
     }
   }
 }

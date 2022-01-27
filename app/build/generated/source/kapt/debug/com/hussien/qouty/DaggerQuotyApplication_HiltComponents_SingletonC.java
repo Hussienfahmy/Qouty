@@ -148,7 +148,7 @@ public final class DaggerQuotyApplication_HiltComponents_SingletonC extends Quot
 
   private Map<String, Provider<WorkerAssistedFactory<? extends ListenableWorker>>> mapOfStringAndProviderOfWorkerAssistedFactoryOf(
       ) {
-    return Collections.<String, Provider<WorkerAssistedFactory<? extends ListenableWorker>>>singletonMap("com.hussien.quoty.sync.NotificationWorker", (Provider) notificationWorker_AssistedFactoryProvider);
+    return Collections.<String, Provider<WorkerAssistedFactory<? extends ListenableWorker>>>singletonMap("com.hussien.qouty.sync.NotificationWorker", (Provider) notificationWorker_AssistedFactoryProvider);
   }
 
   private HiltWorkerFactory hiltWorkerFactory() {
@@ -597,7 +597,7 @@ public final class DaggerQuotyApplication_HiltComponents_SingletonC extends Quot
 
     @Override
     public Map<String, Provider<ViewModel>> getHiltViewModelMap() {
-      return MapBuilder.<String, Provider<ViewModel>>newMapBuilder(2).put("com.hussien.quoty.ui.quotes.QuotesViewModel", (Provider) quotesViewModelProvider).put("com.hussien.quoty.ui.settings.SettingsViewModel", (Provider) settingsViewModelProvider).build();
+      return MapBuilder.<String, Provider<ViewModel>>newMapBuilder(2).put("com.hussien.qouty.ui.quotes.QuotesViewModel", (Provider) quotesViewModelProvider).put("com.hussien.qouty.ui.settings.SettingsViewModel", (Provider) settingsViewModelProvider).build();
     }
 
     private static final class SwitchingProvider<T> implements Provider<T> {
@@ -621,10 +621,10 @@ public final class DaggerQuotyApplication_HiltComponents_SingletonC extends Quot
       @Override
       public T get() {
         switch (id) {
-          case 0: // com.hussien.quoty.ui.quotes.QuotesViewModel 
+          case 0: // com.hussien.qouty.ui.quotes.QuotesViewModel 
           return (T) viewModelCImpl.quotesViewModel();
 
-          case 1: // com.hussien.quoty.ui.settings.SettingsViewModel 
+          case 1: // com.hussien.qouty.ui.settings.SettingsViewModel 
           return (T) viewModelCImpl.settingsViewModel();
 
           default: throw new AssertionError(id);
@@ -717,28 +717,28 @@ public final class DaggerQuotyApplication_HiltComponents_SingletonC extends Quot
     @Override
     public T get() {
       switch (id) {
-        case 0: // com.hussien.quoty.sync.NotificationWorker_AssistedFactory 
+        case 0: // com.hussien.qouty.sync.NotificationWorker_AssistedFactory 
         return (T) singletonC.notificationWorker_AssistedFactory();
 
-        case 1: // com.hussien.quoty.data.QuotesRepository 
+        case 1: // com.hussien.qouty.data.QuotesRepository 
         return (T) singletonC.quotesRepository();
 
-        case 2: // com.hussien.quoty.data.AppDatabase 
+        case 2: // com.hussien.qouty.data.AppDatabase 
         return (T) singletonC.appDatabase();
 
-        case 3: // @com.hussien.quoty.di.IODispatcher kotlinx.coroutines.CoroutineDispatcher 
+        case 3: // @com.hussien.qouty.di.IODispatcher kotlinx.coroutines.CoroutineDispatcher 
         return (T) AppModule_ProvideIoDispatcherFactory.provideIoDispatcher(singletonC.appModule);
 
-        case 4: // com.hussien.quoty.ui.settings.SettingsDataStoreManager 
+        case 4: // com.hussien.qouty.ui.settings.SettingsDataStoreManager 
         return (T) singletonC.settingsDataStoreManager();
 
-        case 5: // com.hussien.quoty.utilities.ActionsUtils 
+        case 5: // com.hussien.qouty.utilities.ActionsUtils 
         return (T) singletonC.actionsUtils();
 
-        case 6: // @com.hussien.quoty.di.ApplicationScope kotlinx.coroutines.CoroutineScope 
+        case 6: // @com.hussien.qouty.di.ApplicationScope kotlinx.coroutines.CoroutineScope 
         return (T) AppModule_ProvideCoroutineAppScopeFactory.provideCoroutineAppScope(singletonC.appModule);
 
-        case 7: // @com.hussien.quoty.di.UIDispatcher kotlinx.coroutines.MainCoroutineDispatcher 
+        case 7: // @com.hussien.qouty.di.UIDispatcher kotlinx.coroutines.MainCoroutineDispatcher 
         return (T) AppModule_ProvideUiDispatcherFactory.provideUiDispatcher(singletonC.appModule);
 
         default: throw new AssertionError(id);

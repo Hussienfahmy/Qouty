@@ -1,6 +1,6 @@
 package com.hussien.qouty;
 
-import dagger.hilt.internal.aggregatedroot.codegen._com_hussien_quoty_QuotyApplication;
+import dagger.hilt.internal.aggregatedroot.codegen._com_hussien_qouty_QuotyApplication;
 import dagger.hilt.internal.componenttreedeps.ComponentTreeDeps;
 import dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_components_ActivityComponent;
 import dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_android_components_ActivityRetainedComponent;
@@ -20,17 +20,17 @@ import dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_compo
 import hilt_aggregated_deps._androidx_hilt_lifecycle_ViewModelFactoryModules_ActivityModuleModuleDeps;
 import hilt_aggregated_deps._androidx_hilt_lifecycle_ViewModelFactoryModules_FragmentModuleModuleDeps;
 import hilt_aggregated_deps._androidx_hilt_work_HiltWrapper_WorkerFactoryModule;
-import hilt_aggregated_deps._com_hussien_quoty_QuotyApplication_GeneratedInjector;
-import hilt_aggregated_deps._com_hussien_quoty_di_AppModule;
-import hilt_aggregated_deps._com_hussien_quoty_sync_NotificationWorker_HiltModule;
-import hilt_aggregated_deps._com_hussien_quoty_sync_QuotesBroadCastReceiver_GeneratedInjector;
-import hilt_aggregated_deps._com_hussien_quoty_ui_MainActivity_GeneratedInjector;
-import hilt_aggregated_deps._com_hussien_quoty_ui_quotes_QuotesFragment_GeneratedInjector;
-import hilt_aggregated_deps._com_hussien_quoty_ui_quotes_QuotesViewModel_HiltModules_BindsModule;
-import hilt_aggregated_deps._com_hussien_quoty_ui_quotes_QuotesViewModel_HiltModules_KeyModule;
-import hilt_aggregated_deps._com_hussien_quoty_ui_settings_SettingsFragment_GeneratedInjector;
-import hilt_aggregated_deps._com_hussien_quoty_ui_settings_SettingsViewModel_HiltModules_BindsModule;
-import hilt_aggregated_deps._com_hussien_quoty_ui_settings_SettingsViewModel_HiltModules_KeyModule;
+import hilt_aggregated_deps._com_hussien_qouty_QuotyApplication_GeneratedInjector;
+import hilt_aggregated_deps._com_hussien_qouty_di_AppModule;
+import hilt_aggregated_deps._com_hussien_qouty_sync_NotificationWorker_HiltModule;
+import hilt_aggregated_deps._com_hussien_qouty_sync_QuotesBroadCastReceiver_GeneratedInjector;
+import hilt_aggregated_deps._com_hussien_qouty_ui_MainActivity_GeneratedInjector;
+import hilt_aggregated_deps._com_hussien_qouty_ui_quotes_QuotesFragment_GeneratedInjector;
+import hilt_aggregated_deps._com_hussien_qouty_ui_quotes_QuotesViewModel_HiltModules_BindsModule;
+import hilt_aggregated_deps._com_hussien_qouty_ui_quotes_QuotesViewModel_HiltModules_KeyModule;
+import hilt_aggregated_deps._com_hussien_qouty_ui_settings_SettingsFragment_GeneratedInjector;
+import hilt_aggregated_deps._com_hussien_qouty_ui_settings_SettingsViewModel_HiltModules_BindsModule;
+import hilt_aggregated_deps._com_hussien_qouty_ui_settings_SettingsViewModel_HiltModules_KeyModule;
 import hilt_aggregated_deps._dagger_hilt_android_flags_FragmentGetContextFix_FragmentGetContextFixEntryPoint;
 import hilt_aggregated_deps._dagger_hilt_android_flags_HiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule;
 import hilt_aggregated_deps._dagger_hilt_android_internal_lifecycle_DefaultViewModelFactories_ActivityEntryPoint;
@@ -51,7 +51,7 @@ import hilt_aggregated_deps._dagger_hilt_android_internal_modules_ApplicationCon
 import hilt_aggregated_deps._dagger_hilt_android_internal_modules_HiltWrapper_ActivityModule;
 
 @ComponentTreeDeps(
-    rootDeps = _com_hussien_quoty_QuotyApplication.class,
+    rootDeps = _com_hussien_qouty_QuotyApplication.class,
     defineComponentDeps = {
         _dagger_hilt_android_components_ActivityComponent.class,
         _dagger_hilt_android_components_ActivityRetainedComponent.class,
@@ -91,17 +91,17 @@ import hilt_aggregated_deps._dagger_hilt_android_internal_modules_HiltWrapper_Ac
         _dagger_hilt_android_internal_managers_ViewComponentManager_ViewWithFragmentComponentBuilderEntryPoint.class,
         _dagger_hilt_android_internal_modules_ApplicationContextModule.class,
         _dagger_hilt_android_internal_modules_HiltWrapper_ActivityModule.class,
-        _com_hussien_quoty_di_AppModule.class,
-        _com_hussien_quoty_QuotyApplication_GeneratedInjector.class,
-        _com_hussien_quoty_sync_QuotesBroadCastReceiver_GeneratedInjector.class,
-        _com_hussien_quoty_ui_MainActivity_GeneratedInjector.class,
-        _com_hussien_quoty_ui_quotes_QuotesFragment_GeneratedInjector.class,
-        _com_hussien_quoty_ui_settings_SettingsFragment_GeneratedInjector.class,
-        _com_hussien_quoty_ui_quotes_QuotesViewModel_HiltModules_BindsModule.class,
-        _com_hussien_quoty_ui_quotes_QuotesViewModel_HiltModules_KeyModule.class,
-        _com_hussien_quoty_ui_settings_SettingsViewModel_HiltModules_BindsModule.class,
-        _com_hussien_quoty_ui_settings_SettingsViewModel_HiltModules_KeyModule.class,
-        _com_hussien_quoty_sync_NotificationWorker_HiltModule.class
+        _com_hussien_qouty_di_AppModule.class,
+        _com_hussien_qouty_QuotyApplication_GeneratedInjector.class,
+        _com_hussien_qouty_sync_QuotesBroadCastReceiver_GeneratedInjector.class,
+        _com_hussien_qouty_ui_MainActivity_GeneratedInjector.class,
+        _com_hussien_qouty_ui_quotes_QuotesFragment_GeneratedInjector.class,
+        _com_hussien_qouty_ui_settings_SettingsFragment_GeneratedInjector.class,
+        _com_hussien_qouty_ui_quotes_QuotesViewModel_HiltModules_BindsModule.class,
+        _com_hussien_qouty_ui_quotes_QuotesViewModel_HiltModules_KeyModule.class,
+        _com_hussien_qouty_ui_settings_SettingsViewModel_HiltModules_BindsModule.class,
+        _com_hussien_qouty_ui_settings_SettingsViewModel_HiltModules_KeyModule.class,
+        _com_hussien_qouty_sync_NotificationWorker_HiltModule.class
     }
 )
 class QuotyApplication_ComponentTreeDeps {

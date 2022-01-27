@@ -1,6 +1,6 @@
 package com.hussien.qouty.ui.settings
 
-import android.app.*
+import android.app.AlertDialog
 import android.content.DialogInterface
 import android.content.SharedPreferences
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener
@@ -10,6 +10,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.preference.*
+import com.hussien.qouty.R
 import com.hussien.qouty.ext.capitalizeEveryFirstChar
 import com.hussien.qouty.ext.trimAllExtraSpaces
 import com.mikepenz.aboutlibraries.LibsBuilder

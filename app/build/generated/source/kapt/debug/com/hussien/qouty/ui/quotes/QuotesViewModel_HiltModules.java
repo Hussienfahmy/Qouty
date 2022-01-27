@@ -29,7 +29,7 @@ public final class QuotesViewModel_HiltModules {
 
     @Binds
     @IntoMap
-    @StringKey("com.hussien.quoty.ui.quotes.QuotesViewModel")
+    @StringKey("com.hussien.qouty.ui.quotes.QuotesViewModel")
     @HiltViewModelMap
     public abstract ViewModel binds(QuotesViewModel vm);
   }
@@ -44,7 +44,7 @@ public final class QuotesViewModel_HiltModules {
     @IntoSet
     @HiltViewModelMap.KeySet
     public static String provide() {
-      return "com.hussien.quoty.ui.quotes.QuotesViewModel";
+      return "com.hussien.qouty.ui.quotes.QuotesViewModel";
     }
   }
 }

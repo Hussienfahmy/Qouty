@@ -7,6 +7,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.hussien.qouty.databinding.RowItemQuoteBinding
+import com.hussien.qouty.ext.addToParentOf
+import com.hussien.qouty.ext.duplicate
+import com.hussien.qouty.ext.scaleWithFading
 import com.hussien.qouty.models.Quote
 import com.hussien.qouty.models.QuotesDiffUtil
 import com.hussien.qouty.ui.quotes.OnQuoteActionClickListener.QuoteAction

@@ -2,8 +2,10 @@ package com.hussien.qouty.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.doOnPreDraw
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupWithNavController
 import com.hussien.qouty.R
 import com.hussien.qouty.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint

@@ -29,7 +29,7 @@ public final class QuotyApplication_MembersInjector implements MembersInjector<Q
     injectWorkerFactory(instance, workerFactoryProvider.get());
   }
 
-  @InjectedFieldSignature("com.hussien.quoty.QuotyApplication.workerFactory")
+  @InjectedFieldSignature("com.hussien.qouty.QuotyApplication.workerFactory")
   public static void injectWorkerFactory(QuotyApplication instance,
       HiltWorkerFactory workerFactory) {
     instance.workerFactory = workerFactory;

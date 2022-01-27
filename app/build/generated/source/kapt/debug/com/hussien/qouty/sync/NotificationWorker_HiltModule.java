@@ -18,7 +18,7 @@ import dagger.multibindings.StringKey;
 public interface NotificationWorker_HiltModule {
   @Binds
   @IntoMap
-  @StringKey("com.hussien.quoty.sync.NotificationWorker")
+  @StringKey("com.hussien.qouty.sync.NotificationWorker")
   WorkerAssistedFactory<? extends ListenableWorker> bind(
       NotificationWorker_AssistedFactory factory);
 }

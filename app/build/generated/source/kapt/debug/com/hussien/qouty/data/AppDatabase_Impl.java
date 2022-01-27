@@ -4,13 +4,19 @@ import androidx.annotation.NonNull;
 import androidx.room.DatabaseConfiguration;
 import androidx.room.InvalidationTracker;
 import androidx.room.RoomOpenHelper;
+import androidx.room.RoomOpenHelper.Delegate;
+import androidx.room.RoomOpenHelper.ValidationResult;
 import androidx.room.migration.AutoMigrationSpec;
 import androidx.room.migration.Migration;
 import androidx.room.util.DBUtil;
 import androidx.room.util.TableInfo;
+import androidx.room.util.TableInfo.Column;
+import androidx.room.util.TableInfo.ForeignKey;
+import androidx.room.util.TableInfo.Index;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 import androidx.sqlite.db.SupportSQLiteOpenHelper;
-
+import androidx.sqlite.db.SupportSQLiteOpenHelper.Callback;
+import androidx.sqlite.db.SupportSQLiteOpenHelper.Configuration;
 import java.lang.Class;
 import java.lang.Override;
 import java.lang.String;
@@ -91,7 +97,7 @@ public final class AppDatabase_Impl extends AppDatabase {
         final TableInfo _infoQuotes = new TableInfo("Quotes", _columnsQuotes, _foreignKeysQuotes, _indicesQuotes);
         final TableInfo _existingQuotes = TableInfo.read(_db, "Quotes");
         if (! _infoQuotes.equals(_existingQuotes)) {
-          return new RoomOpenHelper.ValidationResult(false, "Quotes(com.hussien.quoty.models.Quote).\n"
+          return new RoomOpenHelper.ValidationResult(false, "Quotes(com.hussien.qouty.models.Quote).\n"
                   + " Expected:\n" + _infoQuotes + "\n"
                   + " Found:\n" + _existingQuotes);
         }

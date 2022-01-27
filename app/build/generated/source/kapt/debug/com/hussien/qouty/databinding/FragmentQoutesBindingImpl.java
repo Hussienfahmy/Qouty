@@ -1,7 +1,6 @@
 package com.hussien.qouty.databinding;
+import com.hussien.qouty.R;
 import com.hussien.qouty.BR;
-import com.hussien.qouty.ext.BindingAdaptersKt;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import android.view.View;
@@ -166,7 +165,7 @@ public class FragmentQoutesBindingImpl extends FragmentQoutesBinding implements 
         if ((dirtyFlags & 0xeL) != 0) {
             // api target 1
 
-            BindingAdaptersKt.bindData(this.recyclerView, viewModelQuotesGetValue);
+            com.hussien.qouty.ext.BindingAdaptersKt.bindData(this.recyclerView, viewModelQuotesGetValue);
         }
         if ((dirtyFlags & 0xdL) != 0) {
             // api target 1

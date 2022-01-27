@@ -5,7 +5,7 @@
     <data>
         <variable
             name="quote"
-            type="com.hussien.quoty.models.Quote" />
+            type="com.hussien.qouty.models.Quote" />
     </data>
 
     <LinearLayout

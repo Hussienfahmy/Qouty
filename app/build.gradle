@@ -14,7 +14,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.hussien.quoty"
+        applicationId "com.hussien.qouty"
         minSdkVersion 21
         targetSdkVersion 31
         versionCode 1

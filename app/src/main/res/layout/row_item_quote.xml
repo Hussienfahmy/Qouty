@@ -5,15 +5,15 @@
 
     <data>
 
-        <import type="com.hussien.quoty.ui.quotes.OnQuoteActionClickListener.QuoteAction" />
+        <import type="com.hussien.qouty.ui.quotes.OnQuoteActionClickListener.QuoteAction" />
 
         <variable
             name="quote"
-            type="com.hussien.quoty.models.Quote" />
+            type="com.hussien.qouty.models.Quote" />
 
         <variable
             name="clickListener"
-            type="com.hussien.quoty.ui.quotes.OnQuoteActionClickListener" />
+            type="com.hussien.qouty.ui.quotes.OnQuoteActionClickListener" />
 
         <variable
             name="typeFace"

@@ -6,7 +6,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.hussien.quoty.ui.quotes.QuotesViewModel" />
+            type="com.hussien.qouty.ui.quotes.QuotesViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

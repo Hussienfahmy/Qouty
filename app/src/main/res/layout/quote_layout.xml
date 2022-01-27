@@ -1,28 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:id="@+id/quote_layout"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="@dimen/_5sdp"
-    android:background="@color/true_color"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/quote_text"
+    <data>
+        <variable
+            name="quote"
+            type="com.hussien.quoty.models.Quote" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/quote_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/textSize"
-        android:textColor="@color/blue"
-        tools:text="Every man has his secret sorrows which the world knows not; and often times we call a man cold when he is only sad." />
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:background="@android:color/transparent">
 
-    <TextView
-        android:id="@+id/quote_author"
-        android:layout_width="match_parent"
-        android:gravity="end"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:textColor="@color/purple"
-        tools:text="By Henry Wadsworth Longfellow" />
+        <TextView
+            android:id="@+id/quote_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize"
+            android:textColor="@color/blue"
+            android:text="@{quote.text}"
+            tools:text="Every man has his secret sorrows which the world knows not; and often times we call a man cold when he is only sad." />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/quote_author"
+            android:layout_width="match_parent"
+            android:gravity="end"
+            android:text="@{quote.author}"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/purple"
+            tools:text="By Henry Wadsworth Longfellow" />
+
+    </LinearLayout>
+</layout>

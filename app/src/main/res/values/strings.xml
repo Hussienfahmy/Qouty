@@ -1,21 +1,19 @@
 <resources>
     <string name="app_name">Quoty</string>
-    <string name="key_number_quotes">number</string>
+    <string name="key_number_quotes">number_of_quotes</string>
     <string name="key_tags">tags</string>
     <string name="key_font">font</string>
     <string name="key_lang">lang</string>
     <string name="key_notification">notification</string>
     <string name="key_notify_every">notify_every</string>
-<!--    <string name="key_change_widget_every">widget_every</string>-->
-    <string name="key_should_refresh">should_refresh</string>
     <string name="share_the_quote">Share the quote</string>
-    <string name="three_dots">⋮</string>
     <string name="favourite_the_quote">favourite the quote</string>
     <string name="font_default">roboto_regular.ttf</string>
     <string name="number_quotes_default">15</string>
     <string name="default_notify_every">3600000</string>
     <string name="key_pref_about">key_preference_about</string>
-    <string name="favorites_menu_item">Favorites</string>
+    <string name="show_favourites">Show Favorites</string>
     <string name="setting_menu_item">Setting</string>
     <string name="key_pref_credits">key_pref_credits</string>
+    <string name="copy_the_quote">Copy the quote</string>
 </resources>

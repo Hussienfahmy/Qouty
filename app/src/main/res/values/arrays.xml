@@ -50,12 +50,10 @@
     <array name="notify_every_labels">
         <item>Hourly</item>
         <item>Daily</item>
-        <item>Weekly</item>
     </array>
     <string-array name="notify_every_values">
-        <item>3600000</item>
-        <item>86400000</item>
-        <item>604800000</item>
+        <item>60</item>
+        <item>1440</item>
     </string-array>
 
     <!-- used In Preference the Widget Every -->

@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hussien.qouty">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hussien.quoty">
 
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
     <application
+        android:name=".QuotyApplication"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Qouty">
-        <activity android:name=".activity.MainActivity">
+        android:theme="@style/Theme.Qouty"
+        android:fullBackupContent="false">
+        <activity android:name=".ui.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,12 +34,7 @@
                 android:resource="@xml/provider_paths" />
         </provider>
 
-        <service android:name=".sync.QuotesService"
-            android:enabled="true"
-            android:exported="false"
-            android:permission="android.permission.BIND_JOB_SERVICE"/>
-
-        <receiver android:name=".sync.MyBroadCastReceiver"
+        <receiver android:name=".sync.QuotesBroadCastReceiver"
             android:exported="false"
             android:enabled="true">
             <intent-filter>
@@ -46,6 +45,12 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
         </receiver>
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            tools:node="remove">
+        </provider>
     </application>
 
 </manifest>

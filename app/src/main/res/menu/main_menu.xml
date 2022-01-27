@@ -4,7 +4,8 @@
 
     <item
         android:id="@+id/menu_favorites"
-        android:title="@string/favorites_menu_item"/>
+        android:title="@string/show_favourites"
+        android:checkable="true"/>
 
     <item
         android:id="@+id/menu_setting"
